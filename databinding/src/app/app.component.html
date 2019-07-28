@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <hr />
+  <div class="row">
+    <div class="col-xm-12">
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username"/>
+      <p>{{ username }}</p>
+      <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset User</button>
+    </div>
+  </div>
+</div>
+
