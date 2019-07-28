@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'databinding';
   username = " ";
+  showParragraf = false;
+
+  log = [];
+  onTroggleDetails() {
+    this.showParragraf = !this.onTroggleDetails;
+    this.log.push(this.log.length + 1);
+    this.log.push(new Date());
+  }
 }
